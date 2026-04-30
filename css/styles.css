@@ -1,0 +1,90 @@
+/* Fondo de Halloween para toda la página */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000; /* Fondo de respaldo */
+}
+
+/* Aplicar fondo a todo el contenedor */
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 800px; /* Ajusta el tamaño máximo */
+    padding: 20px;
+    box-sizing: border-box;
+    background-image: url('../img/leonardo.jpg'); /* Cambia esta ruta a la de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    color: #f00000;
+    text-shadow: 2px 2px 5px #000;
+}
+
+p {
+    font-size: 18px;
+    color: #f4f4f9;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #ff6f47;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background-color: #d55a36;
+}
+
+#videoContainer, #imageContainer {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+video, img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#buttonContainer {
+    display: flex;
+    justify-content: center; /* Centra ambos botones horizontalmente */
+    text-align: center;
+}
+
+#googleMapsButton {
+    margin-top: 10px; /* Añadir espacio entre la imagen y el botón */
+    padding: 10px 20px;
+    background-color: #ff6f47; /* Color de fondo de los botones */
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    display: block; /* Asegurar que el botón ocupe toda la línea debajo de la imagen */
+    margin-left: auto;
+    margin-right: auto; /* Centrará el botón debajo de la imagen */
+}
+
